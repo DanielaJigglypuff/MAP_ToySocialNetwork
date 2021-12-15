@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.gui.UserPageController">
+   <children>
+      <Circle layoutX="140.0" layoutY="140.0" radius="126.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.800000011920929" green="0.2639999985694885" blue="0.6703537702560425" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="421.0" layoutY="173.0" radius="121.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <LinearGradient endX="0.1" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7820133566856384" green="0.8899999856948853" blue="0.08009999990463257" opacity="0.48695650696754456" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.11999999731779099" green="1.0" blue="0.8240000009536743" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="266.0" layoutY="218.0" radius="147.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.11999999731779099" green="1.0" blue="0.8240000009536743" opacity="0.5869565010070801" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.11999999731779099" green="1.0" blue="0.8240000009536743" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Label fx:id="nameLabel" contentDisplay="TOP" layoutX="14.0" layoutY="14.0" prefHeight="53.0" prefWidth="294.0" text="userName">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <ListView fx:id="friends" layoutX="386.0" layoutY="52.0" prefHeight="332.0" prefWidth="200.0" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="52.0" />
+      <Pane layoutX="12.0" layoutY="79.0" prefHeight="200.0" prefWidth="127.0">
+         <children>
+            <Button fx:id="seeFriendReqButton" layoutX="5.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleSeeFriendReqButton" prefHeight="30.0" prefWidth="106.0" text="Friend Requests" />
+            <Button layoutX="5.0" layoutY="75.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="106.0" text="MyMessages" />
+            <Button fx:id="seeUsersButton" layoutX="5.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleSeeUsersButton" prefHeight="30.0" prefWidth="106.0" text="All Users" />
+         </children>
+      </Pane>
+      <Button fx:id="removeFriendButton" layoutX="10.0" layoutY="264.0" mnemonicParsing="false" onAction="#handleNewButton" prefHeight="30.0" prefWidth="131.0" text="Unfriend" />
+      <Button fx:id="removeFriendReqButton" layoutX="10.0" layoutY="264.0" mnemonicParsing="false" onAction="#handleNewButton" prefHeight="30.0" prefWidth="131.0" text="Cancel Friend Request" />
+      <Button fx:id="acceptButton" layoutX="10.0" layoutY="264.0" mnemonicParsing="false" onAction="#handleNewButton" prefHeight="30.0" prefWidth="125.0" text="Accept Friend Request">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="declineButton" layoutX="10.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleNewButton" prefHeight="37.0" prefWidth="125.0" text="Decline Friend Request" />
+      <Button fx:id="sendFriendReqButton" layoutX="5.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleNewButton" text="Send Friend Request">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="448.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My friends :3" />
+   </children>
+</AnchorPane>

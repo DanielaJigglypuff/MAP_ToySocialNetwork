@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.gui.FriendReqController">
+   <children>
+      <Label fx:id="userName" layoutX="33.0" layoutY="47.0" text="UserName">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <Circle layoutX="100.0" layoutY="100.0" radius="100.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.943127962085308" endY="0.15165876777251186" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8023686408996582" green="0.9342105388641357" blue="0.6790326237678528" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007662835249042145">
+                     <color>
+                        <Color red="0.8023686408996582" green="0.9342105388641357" blue="0.6790326237678528" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="137.0" layoutY="261.0" radius="125.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.3100000023841858" blue="0.3100000023841858" opacity="0.6883116960525513" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="217.0" layoutY="136.0" radius="80.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.9383886255924171" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9545199871063232" green="0.9800000190734863" blue="0.47040000557899475" opacity="0.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007662835249042145">
+                     <color>
+                        <Color red="0.9545199871063232" green="0.9800000190734863" blue="0.47040000557899475" opacity="0.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007662835249042145">
+                     <color>
+                        <Color red="0.9303597211837769" green="1.0" blue="0.11999999731779099" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <ListView fx:id="friendReq" layoutX="266.0" layoutY="47.0" prefHeight="344.0" prefWidth="308.0" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="47.0" />
+      <Text layoutX="369.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Friend requests " wrappingWidth="101.474609375" />
+   </children>
+</AnchorPane>

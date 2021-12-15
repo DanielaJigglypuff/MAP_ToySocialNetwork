@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.gui.MessagesController">
+   <children>
+      <Circle layoutX="521.0" layoutY="66.0" radius="52.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.05714285714285714" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9399999976158142" green="0.4230000078678131" blue="0.4230000078678131" opacity="0.8173912763595581" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Circle>
+      <Circle layoutX="521.0" layoutY="238.0" radius="52.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.05714285714285714" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4277999997138977" green="0.7940252423286438" blue="0.9300000071525574" opacity="0.8199999928474426" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <TextField layoutX="21.0" layoutY="325.0" prefHeight="40.0" prefWidth="334.0" />
+      <Button fx:id="sendMessageButton" layoutX="388.0" layoutY="333.0" mnemonicParsing="false" text="Send" />
+      <Label fx:id="loggedUserLabel" layoutX="507.0" layoutY="282.0" text="loggedUser" />
+      <Label fx:id="reveiverUserLabel" layoutX="487.0" layoutY="110.0" text="theOtherGuy" />
+      <ListView fx:id="messagesListView" layoutX="21.0" layoutY="21.0" prefHeight="293.0" prefWidth="435.0" />
+   </children>
+</AnchorPane>

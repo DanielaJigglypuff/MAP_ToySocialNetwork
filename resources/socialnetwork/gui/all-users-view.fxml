@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.gui.AllUsersController">
+   <children>
+      <Circle layoutX="81.0" layoutY="97.0" radius="190.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.39336492890995267" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7894737124443054" green="0.22660818696022034" blue="0.22660818696022034" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="407.0" layoutY="181.0" radius="226.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endY="0.909952606635071" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.21150097250938416" green="0.8057180047035217" blue="0.8157894611358643" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="181.0" layoutY="241.0" radius="100.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.7819905213270143" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7699999809265137" green="0.23100000619888306" blue="0.707956850528717" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <ListView fx:id="allUsers" layoutX="264.0" layoutY="63.0" prefHeight="323.0" prefWidth="298.0" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="63.0" />
+      <Label fx:id="userName" layoutX="41.0" layoutY="97.0" text="userName">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
